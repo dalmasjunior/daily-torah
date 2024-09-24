@@ -21,4 +21,6 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-github-pages@v3.1.12
       with:
+        github_token: secrets.GH_TOKEN
         publish_dir: ./dist/out
+        
