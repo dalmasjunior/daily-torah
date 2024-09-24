@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <span>Daily Torah</span>
+</mat-toolbar>
+<div class="date-picker">
+    <button mat-icon-button (click)="decreaseDate()">
+        <mat-icon>
+            arrow_back_ios
+        </mat-icon>
+    </button>
+    <h3>
+        {{today}}
+    </h3>
+    <button mat-icon-button (click)="increaseDate()">
+        <mat-icon>
+            arrow_forward_ios
+        </mat-icon>
+    </button>
+</div>
+<mat-tab-group>
+    <mat-tab label="Tanakh">
+    </mat-tab>
+    <mat-tab label="Talmud"></mat-tab>
+    <mat-tab label="Mishnah"></mat-tab>
+    <mat-tab label="Halakhah"></mat-tab>
+    <mat-tab label="Kabbalah"></mat-tab>
+    <mat-tab label="Chasidut"></mat-tab>    
+</mat-tab-group>
